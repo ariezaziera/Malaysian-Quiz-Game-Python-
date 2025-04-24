@@ -4,13 +4,13 @@ from ttkbootstrap import Style
 from malaysia_data import questions
 from tkinter import Frame  # Add this to your existing imports
 
-time_left = 5  # Seconds per question
+time_left = 10  # Seconds per question
 is_paused = False
 remaining_time = 0
 
 def reset_timer():
     global time_left, is_paused
-    time_left = 5
+    time_left = 10
     if not is_paused:
         time_display.config(text=str(time_left), foreground="black")
         if hasattr(root, 'timer_job'):
